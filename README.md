@@ -20,3 +20,24 @@
 | /todolist/:id | GET    | get todo list with specific id |
 | /todolist/:id | DELETE | DELETE Todo list               |
 | /todolist/:id | PUT    | Update todo list               |
+
+## Todo
+
+| end point | method | action                           |
+| --------- | ------ | -------------------------------- |
+| /:id/todo | POST   | create todo in specific todolist |
+| /:id/todo | GET    | get all todo in todo list        |
+| /todo/:id | GET    | get todo with specific id        |
+| /todo/:id | DELETE | DELETE Todo                      |
+| /todo/:id | PUT    | Update todo                      |
+
+## How to run
+
+- Clone the repo
+- npm i
+- Add .env file with the variables mentioned in .env.sample
+- npm start
+
+## Postman Collection
+
+- Postman collection is available at public/docs directory
