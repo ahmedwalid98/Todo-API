@@ -6,9 +6,11 @@ import todoRoute from "./routes/todo.route";
 import { config } from "dotenv";
 import errorHanler from "./utils/errorHanler";
 import * as cookieParser from "cookie-parser";
+import * as cors from "cors";
 
 config();
 const app = express();
+app.use(cors());
 app.use(express.json());
 app.use(cookieParser());
 mongoose.set("strictQuery", true);
